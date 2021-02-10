@@ -16,6 +16,15 @@ const handleUserInput = (input) => {
   if (input === 's') {
     connection.write('Move: down');
   }
+  if (input === 'i') {
+    connection.write('Say: Im not a');
+  }
+  if (input === 'o') {
+    connection.write('Say: conspiracy theorist')
+  }
+  if (input === 'p') {
+    connection.write('Say: but.......')
+  }
 };
 const setupInput = function(conn) {
   const stdin = process.stdin;

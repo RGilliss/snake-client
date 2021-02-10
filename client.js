@@ -12,7 +12,7 @@ const connect = function() {
   conn.on("connect", () => {
     console.log("Successfully connected to the game server");
     conn.write('Name: RYE'); //Labels snake with name
-  })
+;  })
   conn.on('data', (message) => {
     //Message when client dies due to idle
     console.log(message)
